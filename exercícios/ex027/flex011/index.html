@@ -16,19 +16,29 @@
             background-color: lightskyblue;
             border: 1px solid black;
             text-align: center;
+            flex-basis: 250px;
+            flex-shrink: 1;
+            flex-grow: 1;
+        }
+
+        div#cxA {
+            flex-basis: 200px;
+        }
+
+        div#cxB {
             flex-basis: 150px;
+        }
+
+        div#cxC {
+            flex-basis: auto;
         }
     </style>
 </head>
 <body>
     <div class="conteiner">
-        <div class="item">A</div>
-        <div class="item">Outro conteúdo</div>
-        <div class="item">C</div>
-        <div class="item">Conteúdo um pouco maior</div>
-        <div class="item">E</div>
-        <div class="item">Conteúdo maiorm ainda, vai ocupar mais espaço.</div>
-        <div class="item">G</div>
+        <div class="item" id="cxA">A</div>
+        <div class="item" id="cxB">B</div>
+        <div class="item" id="cxC">C</div>
     </div>
 </body>
 </html>
